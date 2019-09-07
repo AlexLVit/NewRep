@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SquareCalculation
 {
-	 interface IShape
+	public interface IShape
 	{
 		 double Calculate();
 	}

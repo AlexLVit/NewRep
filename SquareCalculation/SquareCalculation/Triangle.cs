@@ -7,29 +7,29 @@ namespace SquareCalculation
 {
 	public class Triangle : IShape
 	{
-		private double firstSide;
+		private double _firstSide;
 
-		private double secondSide;
+		private double _secondSide;
 
-		private double thirdSide;
+		private double _thirdSide;
 
-		public Triangle(double _firstSide, double _secondSide, double _thirdSide)
+		public Triangle(double firstSide, double secondSide, double thirdSide)
 		{
-			firstSide = _firstSide;
-			secondSide = _secondSide;
-			thirdSide = _thirdSide;
+			this._firstSide = firstSide;
+			this._secondSide = secondSide;
+			this._thirdSide = thirdSide;
 			
 		}
 
 		public double Calculate()
 		{
-			Debug.Assert(firstSide > 0 && secondSide > 0 && thirdSide > 0);
+			Debug.Assert(_firstSide > 0 && _secondSide > 0 && _thirdSide > 0);
 
-			Debug.Assert(firstSide < double.MaxValue && secondSide < double.MaxValue && thirdSide < double.MaxValue);
+			Debug.Assert(_firstSide < double.MaxValue && _secondSide < double.MaxValue && _thirdSide < double.MaxValue);
 
-			double perimeter = (firstSide + secondSide + thirdSide) / 2;
+			double perimeter = (_firstSide + _secondSide + _thirdSide) / 2;
 
-			double square = Math.Sqrt(perimeter * (perimeter - firstSide) * (perimeter - secondSide) * (perimeter - thirdSide));
+			double square = Math.Sqrt(perimeter * (perimeter - _firstSide) * (perimeter - _secondSide) * (perimeter - _thirdSide));
 
 		    return square;
 		}

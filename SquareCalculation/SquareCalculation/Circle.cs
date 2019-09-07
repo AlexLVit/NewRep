@@ -7,18 +7,18 @@ namespace SquareCalculation
 {
 	public class Circle : IShape
 	{
-		private double radius;
+		private double _radius;
 
-		public Circle(double _radius)
+		public Circle(double radius)
 		{
-			radius = _radius;
+			this._radius = radius;
 		}
 
 		public double Calculate()
 		{
-			Debug.Assert(radius < double.MaxValue);
+			Debug.Assert(_radius < double.MaxValue);
 
-			double square = Math.PI * Math.Pow(radius, 2);
+			double square = Math.PI * Math.Pow(_radius, 2);
 
 			return square;
 		}
