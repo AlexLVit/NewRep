@@ -31,7 +31,7 @@ namespace SquareCalculation
 
 			double square = Math.Sqrt(perimeter * (perimeter - firstSide) * (perimeter - secondSide) * (perimeter - thirdSide));
 
-			return square;
+		    return square;
 		}
 	}
 }
