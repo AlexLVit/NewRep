@@ -21,7 +21,7 @@ namespace SquareCalculation
 			
 		}
 
-		 public double Calculate()
+		public double Calculate()
 		{
 			Debug.Assert(firstSide > 0 && secondSide > 0 && thirdSide > 0);
 
